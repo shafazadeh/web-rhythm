@@ -10,7 +10,6 @@
 		"prepare": "husky"
 	},
 	"devDependencies": {
-		"cspell": "^9.2.1",
 		"husky": "^9.1.7",
 		"lint-staged": "^16.1.6",
 		"prettier": "^3.6.2",
@@ -29,9 +28,6 @@
 		"*.{js,jsx,ts,tsx}": [
 			"eslint --fix",
 			"prettier --write"
-		],
-		"**/*": [
-			"cspell --no-must-find-files"
 		]
 	}
 }
