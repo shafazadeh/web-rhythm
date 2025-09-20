@@ -7,9 +7,14 @@
 		"lint": "turbo run lint",
 		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
 		"check-types": "turbo run check-types",
-		"prepare": "husky"
+		"prepare": "husky",
+		"e2e": "cd e2e && npm run test",
+		"e2e:ui": "cd e2e && npm run test:ui",
+		"e2e:admin": "cd e2e && npm run test:admin",
+		"e2e:site": "cd e2e && npm run test:site"
 	},
 	"devDependencies": {
+		"@playwright/test": "^1.55.0",
 		"husky": "^9.1.7",
 		"lint-staged": "^16.1.6",
 		"prettier": "^3.6.2",
